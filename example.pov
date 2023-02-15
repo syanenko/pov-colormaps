@@ -13,7 +13,6 @@
 // e-mail: See posts in news.povray.org
 //
 //------------------------------------------------------------------------
-
 #include "colormaps.inc"
 #version 3.8;
 
@@ -37,14 +36,46 @@ camera { orthographic
 light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 
 //
+// Make colormaps
+//
+#macro MakeColorMap (_arr, _f, _t)
+
+	#local len = dimension_size (_arr, 1)-1;
+	#local _color_map = 
+	color_map {
+		#for (I, 0, len)
+  		#local _color = <_arr[I][1].x, _arr[I][1].y, _arr[I][1].z, _f, _t>;
+  		[_arr [I][0], rgbft _color]
+		#end
+	}
+	
+	_color_map
+#end
+
+#declare _f = 0;
+#declare _t = 0;
+#declare jet    = MakeColorMap (jet_arr,    _f, _t);
+#declare spring = MakeColorMap (spring_arr, _f, _t);
+#declare hot    = MakeColorMap (hot_arr,    _f, _t);
+#declare winter = MakeColorMap (winter_arr, _f, _t);
+#declare hsv    = MakeColorMap (hsv_arr,    _f, _t);
+#declare autumn = MakeColorMap (autumn_arr, _f, _t);
+#declare parula = MakeColorMap (parula_arr, _f, _t);
+#declare summer = MakeColorMap (summer_arr, _f, _t);
+#declare turbo  = MakeColorMap (turbo_arr,  _f, _t);
+#declare cool   = MakeColorMap (cool_arr,   _f, _t);
+
+//
 // Make text
 //
 #macro make_text (_text, _x)
      #local _text =
-        text { ttf "arial.ttf", _text, 0.02, 0.0 scale 2.1 translate <_x,-0.5,-0.1>  pigment {rgb <0,0,0> }}
+        text { ttf "arial.ttf", _text, 0.02, 0.0 scale 2.1 translate <_x,-0.5,-0.1>  pigment {rgb <0,0,0,0,0> }}
     _text
 #end
+  
 
+  
 //
 // Make box
 //
