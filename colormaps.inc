@@ -18,6 +18,23 @@
 //------------------------------------------------------------------------
 
 //
+// Make colormap
+//
+#macro make_colormap (_arr, _f, _t)
+
+	#local len = dimension_size (_arr, 1)-1;
+	#local _color_map = 
+	color_map {
+		#for (I, 0, len)
+  		#local _color = <_arr[I][1].x, _arr[I][1].y, _arr[I][1].z, _f, _t>;
+  		[_arr [I][0], rgbft _color]
+		#end
+	}
+	
+	_color_map
+#end
+
+//
 // Spring
 //
 #declare spring_arr = array mixed [256][2] {

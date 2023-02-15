@@ -36,36 +36,6 @@ camera { orthographic
 light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 
 //
-// Make colormaps
-//
-#macro MakeColorMap (_arr, _f, _t)
-
-	#local len = dimension_size (_arr, 1)-1;
-	#local _color_map = 
-	color_map {
-		#for (I, 0, len)
-  		#local _color = <_arr[I][1].x, _arr[I][1].y, _arr[I][1].z, _f, _t>;
-  		[_arr [I][0], rgbft _color]
-		#end
-	}
-	
-	_color_map
-#end
-
-#declare _f = 0;
-#declare _t = 0;
-#declare jet    = MakeColorMap (jet_arr,    _f, _t);
-#declare spring = MakeColorMap (spring_arr, _f, _t);
-#declare hot    = MakeColorMap (hot_arr,    _f, _t);
-#declare winter = MakeColorMap (winter_arr, _f, _t);
-#declare hsv    = MakeColorMap (hsv_arr,    _f, _t);
-#declare autumn = MakeColorMap (autumn_arr, _f, _t);
-#declare parula = MakeColorMap (parula_arr, _f, _t);
-#declare summer = MakeColorMap (summer_arr, _f, _t);
-#declare turbo  = MakeColorMap (turbo_arr,  _f, _t);
-#declare cool   = MakeColorMap (cool_arr,   _f, _t);
-
-//
 // Make text
 //
 #macro make_text (_text, _x)
@@ -73,7 +43,22 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
         text { ttf "arial.ttf", _text, 0.02, 0.0 scale 2.1 translate <_x,-0.5,-0.1>  pigment {rgb <0,0,0,0,0> }}
     _text
 #end
-  
+
+//
+// Prepare colormaps of desired transparency
+//
+#declare _f = 0;
+#declare _t = 0;
+#declare jet    = make_colormap (jet_arr,    _f, _t);
+#declare spring = make_colormap (spring_arr, _f, _t);
+#declare hot    = make_colormap (hot_arr,    _f, _t);
+#declare winter = make_colormap (winter_arr, _f, _t);
+#declare hsv    = make_colormap (hsv_arr,    _f, _t);
+#declare autumn = make_colormap (autumn_arr, _f, _t);
+#declare parula = make_colormap (parula_arr, _f, _t);
+#declare summer = make_colormap (summer_arr, _f, _t);
+#declare turbo  = make_colormap (turbo_arr,  _f, _t);
+#declare cool   = make_colormap (cool_arr,   _f, _t);
 
   
 //
