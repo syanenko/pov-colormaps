@@ -49,16 +49,16 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 //
 #declare _f = 0;
 #declare _t = 0;
-#declare jet    = make_colormap (jet_arr,    _f, _t);
-#declare spring = make_colormap (spring_arr, _f, _t);
-#declare hot    = make_colormap (hot_arr,    _f, _t);
-#declare winter = make_colormap (winter_arr, _f, _t);
-#declare hsv    = make_colormap (hsv_arr,    _f, _t);
-#declare autumn = make_colormap (autumn_arr, _f, _t);
-#declare parula = make_colormap (parula_arr, _f, _t);
-#declare summer = make_colormap (summer_arr, _f, _t);
-#declare turbo  = make_colormap (turbo_arr,  _f, _t);
-#declare cool   = make_colormap (cool_arr,   _f, _t);
+#declare jet    = make_colormap (jet,    _f, _t);
+#declare spring = make_colormap (spring, _f, _t);
+#declare hot    = make_colormap (hot,    _f, _t);
+#declare winter = make_colormap (winter, _f, _t);
+#declare hsv    = make_colormap (hsv,    _f, _t);
+#declare autumn = make_colormap (autumn, _f, _t);
+#declare parula = make_colormap (parula, _f, _t);
+#declare summer = make_colormap (summer, _f, _t);
+#declare turbo  = make_colormap (turbo,  _f, _t);
+#declare cool   = make_colormap (cool,   _f, _t);
 
   
 //
