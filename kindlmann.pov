@@ -38,7 +38,7 @@ camp (5,4,5, 0,0,0, 43)
 #end
 
 //
-// Prepare colormaps of desired transparency
+// Prepare colormap
 //
 #declare _f = 0.6;
 #declare _t = 0;
