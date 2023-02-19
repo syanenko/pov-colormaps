@@ -49,6 +49,7 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 //
 #declare _f = 0;
 #declare _t = 0;
+                                 
 #declare jet    = make_colormap (jet,    _f, _t);
 #declare spring = make_colormap (spring, _f, _t);
 #declare hot    = make_colormap (hot,    _f, _t);
@@ -59,6 +60,13 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 #declare summer = make_colormap (summer, _f, _t);
 #declare turbo  = make_colormap (turbo,  _f, _t);
 #declare cool   = make_colormap (cool,   _f, _t);
+
+#declare viridis          = make_colormap (viridis,          _f, _t);
+#declare smooth_cool_warm = make_colormap (smooth_cool_warm, _f, _t);
+#declare plasma           = make_colormap (plasma,           _f, _t);
+#declare ext_kindlmann    = make_colormap (ext_kindlmann,    _f, _t);
+#declare kindlmann        = make_colormap (kindlmann,        _f, _t);
+#declare inferno          = make_colormap (inferno,          _f, _t);
 
   
 //
@@ -79,7 +87,34 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 
 //
 // Colormaps list
+
 //
+// Plasma
+// 
+union {
+    text {make_text ("Plasma", -2)}
+    box  {make_box(plasma)}                      
+    translate y * 53
+}
+
+
+//
+// Smooth cool warm
+// 
+union {
+    text {make_text ("Smooth cool warm", -7.5)}
+    box  {make_box(smooth_cool_warm)}                      
+    translate y * 46
+}
+
+//
+// Viridis
+// 
+union {
+    text {make_text ("Viridis", -3)}
+    box  {make_box(viridis)}                      
+    translate y * 39
+}
 
 //
 // Jet
@@ -148,7 +183,7 @@ union {
 // Summer
 // 
 union {
-    text {make_text ("Summer", -4.)}
+    text {make_text ("Summer", -4)}
     box  {make_box(summer)}                      
     translate y * -17
 }
@@ -169,4 +204,31 @@ union {
     text {make_text ("Cool", -2.5)}
     box  {make_box(cool)}                      
     translate y * -31
+}
+
+//
+// Kindlmann
+// 
+union {
+    text {make_text ("Kindlmann", -5)}
+    box  {make_box(kindlmann)}                      
+    translate y * -38
+}
+
+//
+// Extended kindlmann
+// 
+union {
+    text {make_text ("Extended kindlmann", -9)}
+    box  {make_box(ext_kindlmann)}                      
+    translate y * -45
+}
+
+//
+// Inferno
+// 
+union {
+    text {make_text ("Inferno", -4)}
+    box  {make_box(inferno)}                      
+    translate y * -52
 }
