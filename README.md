@@ -3,7 +3,7 @@
 ### Ready to use colormaps for [POV-Ray](http://www.povray.org/) raytracer.
 ![list_gh](https://user-images.githubusercontent.com/6688301/219973575-04895af4-0d6c-436c-b61e-08797a456bb5.png)
 
-Colormap source: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
+Source: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
 
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
