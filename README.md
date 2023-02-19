@@ -1,7 +1,10 @@
 # POV-Ray colormaps
 
 ### Ready to use colormaps for [POV-Ray](http://www.povray.org/) raytracer.
-![example](https://user-images.githubusercontent.com/6688301/218434515-82efabdb-2196-447a-ae99-89855008195a.png)\
+![list_gh](https://user-images.githubusercontent.com/6688301/219973575-04895af4-0d6c-436c-b61e-08797a456bb5.png)
+
+Source: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
+
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
