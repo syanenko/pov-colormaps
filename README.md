@@ -1,6 +1,6 @@
 # POV-Ray colormaps
 
-### Ready to use colormaps for [POV-Ray](http://www.povray.org/) raytracer.
+### Set of colormaps for [POV-Ray](http://www.povray.org/) raytracer, recommended for scientific visualisation.
 ![list_gh](https://user-images.githubusercontent.com/6688301/219973575-04895af4-0d6c-436c-b61e-08797a456bb5.png)
 
 ![kindlmann_gh](https://user-images.githubusercontent.com/6688301/219979368-2b4f983a-e501-46cd-b493-71097bac8a0b.png)
@@ -9,7 +9,10 @@
 
 ![plasma_gh](https://user-images.githubusercontent.com/6688301/219979142-db93ab38-1e4b-4702-912e-c6c0081b8955.png)
 
-Source: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
+Sources:  
+MathWorks: https://www.mathworks.com/help/matlab/ref/colormap.html  
+Kenneth Moreland: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
+
 
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
