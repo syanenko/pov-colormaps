@@ -25,4 +25,6 @@ Basics: [https://povlab.online/povtutorial/](https://povlab.online/povtutorial/)
 Animation: [https://povlab.online/animtutorial/](https://povlab.online/povtutorial/)\
 Isosurfaces: [https://povlab.online/isotutorial/](https://povlab.online/isotutorial/)
 
+Videos: [POV-Ray channel on Youtube](https://www.youtube.com/playlist?list=PL_L-Rlt-OWoJm6HN9t-hxXRk-b6SONXbJ)
+
 Contact me at [LinkedIn](https://www.linkedin.com/in/sergey-yanenko-57b21a96/).
