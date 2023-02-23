@@ -4,7 +4,6 @@
 Sources:\
 MathWorks: https://www.mathworks.com/help/matlab/ref/colormap.html  
 Kenneth Moreland: [https://www.kennethmoreland.com/color-advice/](https://www.kennethmoreland.com/color-advice/)
-
 #
 ![list_gh](https://user-images.githubusercontent.com/6688301/219973575-04895af4-0d6c-436c-b61e-08797a456bb5.png)
 #
