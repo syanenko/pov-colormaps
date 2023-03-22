@@ -1,4 +1,4 @@
-# POV colormaps
+# *POV colormaps*
 
 ### Set of colormaps for [POV-Ray](http://www.povray.org/) raytracer, recommended for scientific visualisation.
 Sources:\
