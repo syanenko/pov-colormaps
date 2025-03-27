@@ -3,7 +3,7 @@
 // Persistence of Vision Ray Tracer version 3.8
 // Scene Description Language (SDL)
 // 
-// Deminstration of colormaps
+// Colormaps demonstration
 //
 // File: usage.pov
 // Version: 1.0
