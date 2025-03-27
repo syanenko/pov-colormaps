@@ -71,7 +71,7 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 
 #switch (clock)
 #case (0)
-  #declare colmap              = make_colormap (jet,              _f, _t);
+  #declare colmap           = make_colormap (jet,              _f, _t);
 #break
 
 #case (1)
@@ -159,14 +159,23 @@ light_source{<0.0, 0.0, - 30.0> rgb <0.80, 0.80, 0.80> parallel }
 //
 #macro make_tex_box (colormap)
      #local _box =
-     
-     box { <-4,-4,0>,< 4, 4, 1.00>
-           texture { pigment { gradient x
+     union {
+     box { <-4,-4,0>, < 0, 4, 1.00>
+           texture { pigment { gradient -x
                                color_map {colormap}
-                               translate -x*0.5
-                               scale 8 }}
+                               translate <0, 0, 0>
+                               scale 4 }}
            scale 10           
          }
+
+     box { <0,-4,0>,< 4, 4, 1.00>
+           texture { pigment { gradient x
+                               color_map {colormap}
+                               translate <0, 0, 0>
+                               scale 4 }}
+           scale 10           
+         }
+     }
     _box
 #end
 
